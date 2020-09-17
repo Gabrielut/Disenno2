@@ -7,3 +7,145 @@
 .body {
     font-family: 'Roboto', sans-serif;
 }
+
+h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
+    color:  #000000 ;
+    font-weight: 300;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor1{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+
+}
+
+h1{
+    font-size: 50px;
+}
+
+/*header*/
+
+header::before{
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgb(0, 0, 0, .2);
+    position: fixed;
+    transition: ease-in-out 0.5s;
+    top: 0;
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+.nav .logo{
+    height: 80px;
+
+}
+
+.nav .logo img{
+    height: 100%;
+    vertical-align: top;
+
+}
+
+.enlaces-header{
+    font-weight: 300;
+}
+
+.nav .enlaces-header a{
+    color:  #6f7079 ;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hamburger{
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburger > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.contenido-header{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.contenido-header > img{
+    width: 550px;
+    animation: ease-in animat 1s;
+}
+
+@keyframes animat{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.textos-header{
+    margin: 0px 0px 0px 30px;
+}
+
+.contenido-header p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #6f7079;
+}
+
+.contenido-header a{
+    margin: 28px 0 0 0 ;
+    width: 130px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgb(31, 222, 130, .46);
+    background-color: #1fDe82;
+}
+
+
+.titulo{
+    font-size: 50px;
+    
+}
