@@ -219,7 +219,7 @@ nav {
 }
 
 .questions>img {
-    width: 550px;    
+    width: 550px;
 }
 
 .textos-questions {
@@ -250,60 +250,60 @@ nav {
 
 /*Numbers*/
 
-.results{
+.results {
     background-color: royalblue;
     padding-top: 30px;
 }
 
-.content-results{
+.content-results {
     display: flex;
     justify-content: space-evenly;
-
 }
 
-.numbers{
+.numbers {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.numbers .number{
+.numbers .number {
     width: 45%;
-    background: rgba(255, 255, 255, .2); 
+    background: rgba(255, 255, 255, .2);
     color: #fff;
     border-radius: 10px;
     padding: 40px 35px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
-.numbers .number h4{
+
+.numbers .number h4 {
     color: #fff;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.numbers .number p{
+.numbers .number p {
     color: #f2f5fc;
     font-weight: 300;
 }
 
-.results-text{
+.results-text {
     width: 37%;
 }
 
-.results-text h4{
+.results-text h4 {
     color: #fff;
     font-size: 40px;
 }
 
-.results-text p{
+.results-text p {
     color: #fff;
     font-weight: 300;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
-.results-text>a{
+.results-text>a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
@@ -316,20 +316,20 @@ nav {
 
 /*Skills*/
 
-.service{
+.service {
     display: flex;
     justify-content: space-between;
 }
 
-.service>img{
+.service>img {
     width: 500px;
 }
 
-.box-skills{
+.box-skills {
     margin: 30px 30px 0 0;
 }
 
-.box-skills h4{
+.box-skills h4 {
     font-size: 24px;
     background: #f2f2f2;
     width: 350px;
@@ -338,8 +338,70 @@ nav {
     margin-bottom: 10px;
 }
 
-.box-skills i{
-color: #1fde82;
-font-size: 20px;
+.box-skills i {
+    color: #1fde82;
+    font-size: 20px;
+}
 
+/* Footer */
+
+footer {
+    background: #f2f2f2;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partfooder {
+    width: 20%;
+    text-align: center;
+}
+
+.partfooder h4 {
+    color: #1d273b;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partfooder a:hover {
+    color: #1fde82;
+}
+
+.partfooder a {
+    display: block;
+    text-decoration: none;
+    color: #5d6678;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.partfooder img {
+    width: 70%;
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #adb6c7;
+    border: 1px solid #adb6c7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover{
+    color: #fff;
+    background-color: #1fde82;
+    border-color: #1fde82;
 }
