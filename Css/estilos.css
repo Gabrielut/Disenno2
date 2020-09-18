@@ -72,6 +72,7 @@ nav {
 
 .enlaces-header {
     font-weight: 300;
+    transition: ease-in-out 0.5s;
 }
 
 .nav .enlaces-header a {
@@ -486,49 +487,61 @@ footer {
     .nav {
         padding: 0 10px;
     }
-
-    .contenido-header>img{
+    .contenido-header>img {
         width: 200px;
     }
-    .enlaces-header{
-        display: none;
+    .enlaces-header {
+        position: fixed;
+        background: #00c3ff;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ffff1c, #00c3ff);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
     }
-
-    .hamburger{
+    .nav .menudos {
+        --webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+    .hamburger {
         display: block;
     }
-
     /*About us*/
-    .articulo{
+    .articulo {
         width: 95%;
     }
     /*Questions*/
-
-    .questions>img{
+    .questions>img {
         width: 200px;
     }
-
     /*Numbers*/
-    .numbers .number{
+    .numbers .number {
         width: 95%;
     }
-
-    .results-text h4{
+    .results-text h4 {
         font-size: 35px;
     }
-
     /*Skills*/
-
-    .service>img{
+    .service>img {
         width: 200px;
     }
-    .box-skills h4{
+    .box-skills h4 {
         width: 100%;
-        
     }
-
     /*Footer*/
-    .partfooder{
+    .partfooder {
         width: 95%;
         margin-bottom: 40px;
     }
